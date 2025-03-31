@@ -2,17 +2,22 @@ section header {
   border-top: 1px solid var(--stroke-color);
   padding-block: 12px 24px;
   font: var(--text-span);
+
   a {
     justify-self: end;
     align-items: center;
     gap: 8px;
 
     span {
+      display: inline-block;
       background-image: url(../assets/icons/ArrowRight.svg);
       width: 16px;
       height: 16px;
+      background-repeat: no-repeat;
+      background-position: center;
     }
-    &:hover {
+
+    &:hover span {
       background-image: url(../assets/icons/ArrowRightHover.svg);
     }
   }
